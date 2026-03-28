@@ -1,0 +1,839 @@
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap");
+
+/* global styles */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Hanken Grotesk", sans-serif;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 24px;
+  color: #666666;
+  border-bottom: 3px solid #008ecc;
+  padding-bottom: 15px;
+}
+
+h2 span {
+  color: #008ecc;
+}
+
+/* style for header */
+
+header {
+  width: 100%;
+  position: sticky;
+  z-index: 1;
+  top: 0;
+  background: #fff;
+}
+
+header .header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 100px;
+  background: #f5f5f5;
+}
+
+header .header-top .header-top-left p {
+  font-size: 14px;
+  font-weight: 400;
+  color: #666666;
+}
+
+header .header-top .header-top-right {
+  display: flex;
+  gap: 15px;
+}
+
+header .header-top .header-top-right .middle {
+  border-left: 1px solid #d9d9d9;
+  border-right: 1px solid #d9d9d9;
+  padding: 0 15px;
+}
+
+header .header-top .header-top-right div p {
+  font-size: 14px;
+  font-weight: 400;
+  color: #666666;
+  cursor: pointer;
+}
+
+header .header-top .header-top-right div p span {
+  font-weight: 600;
+}
+
+header .header-top .header-top-right div p i {
+  color: #008ecc;
+  margin-right: 6px;
+}
+
+header .header-middle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 100px;
+  border-bottom: 1px solid #ededed;
+}
+
+header .header-middle .header-middle-left {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+header .header-middle .header-middle-left button {
+  background-color: #f3f9fb;
+  padding: 8px;
+  border-radius: 10px;
+  color: #008ecc;
+  font-size: 24px;
+  border: none;
+  cursor: pointer;
+}
+
+header .header-middle .header-middle-left img {
+  width: 125px;
+  height: 25px;
+}
+
+header .header-middle .header-middle-right {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+header .header-middle .header-middle-right .search {
+  background: #f3f9fb;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+header .header-middle .header-middle-right .search button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+header .header-middle .header-middle-right .search i {
+  font-size: 18px;
+  color: #008ecc;
+}
+
+header .header-middle .header-middle-right .search input {
+  width: 350px;
+  background: none;
+  border: none;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+header .header-middle .header-middle-right .search input:focus {
+  outline: none;
+}
+
+header .header-middle .header-middle-right .search input:placeholder {
+  font-weight: 400;
+  font-size: 14px;
+  color: #666666;
+}
+
+header .header-middle .header-middle-right .sign-in {
+  display: flex;
+  gap: 20px;
+}
+
+header .header-middle .header-middle-right .sign-in p {
+  font-weight: 700;
+  font-size: 16px;
+  color: #666666;
+  cursor: pointer;
+}
+
+header .header-middle .header-middle-right .sign-in p i {
+  color: #008ecc;
+  margin-right: 5px;
+}
+
+header .header-middle .header-middle-right .sign-in p.border {
+  border-right: 1px solid #d9d9d9;
+  padding-right: 20px;
+}
+
+/* style for main */
+
+main {
+  width: 100%;
+}
+
+/* style for main-header section */
+
+main .header {
+  padding: 15px 100px;
+  border-bottom: 1px solid #ededed;
+}
+
+main .header .filter {
+  display: flex;
+  justify-content: space-between;
+}
+
+main .header .filter button {
+  background: #f3f9fb;
+  padding: 9px 10px;
+  border-radius: 18px;
+  border: none;
+  font-size: 14px;
+  font-weight: 500;
+  color: #222222;
+  font-family: inherit;
+  transition: all 0.1s ease;
+}
+
+main .header .filter button i {
+  color: #008ecc;
+  margin-left: 5px;
+}
+
+main .header .filter button:hover {
+  background: #008ecc;
+  color: #fff;
+}
+
+main .header .filter button:hover i {
+  color: #fff;
+}
+
+/* style for slider section */
+
+main .slider {
+  width: 100%;
+  padding: 20px 100px 100px;
+}
+
+main .slider .container {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  background: #212844;
+  border-radius: 16px;
+}
+
+main .slider .container .next {
+  background: #f3f9fb;
+  border-radius: 50%;
+  padding: 25px;
+  border: 8px solid #fff;
+  align-self: center;
+  font-size: 18px;
+  color: #008ecc;
+  transition: all 0.1s ease;
+}
+
+main .slider .container .next1 {
+  position: absolute;
+  left: -45px;
+}
+
+main .slider .container .next1:hover {
+  transform: translateX(-3px);
+}
+
+main .slider .container .next2 {
+  position: absolute;
+  right: -45px;
+}
+
+main .slider .container .next2:hover {
+  transform: translateX(3px);
+}
+
+main .slider .container .title {
+  padding: 30px 0px 30px 80px;
+  color: #fff;
+}
+
+main .slider .container .title .desc1 {
+  font-weight: 600;
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+main .slider .container .title .title1 {
+  font-weight: 700;
+  font-size: 52px;
+  margin-bottom: 10px;
+}
+
+main .slider .container .title .desc2 {
+  font-weight: 600;
+  font-size: 30px;
+  margin-bottom: 85px;
+}
+
+main .slider .container .title .dots {
+  display: flex;
+  justify-content: space-between;
+  width: 120px;
+}
+
+main .slider .container .title .dots div {
+  width: 8px;
+  height: 8px;
+  background: #fff;
+  border-radius: 50%;
+}
+
+main .slider .container .title .dots .dot1 {
+  width: 24px;
+  border-radius: 7px;
+}
+
+main .slider .container .images {
+  position: relative;
+}
+
+main .slider .container .images .img2 {
+  position: absolute;
+  top: 30px;
+  right: 130px;
+}
+
+/* style for smartphones section */
+
+main .smartphones {
+  width: 100%;
+  padding: 0 100px 100px;
+}
+
+main .smartphones .title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ededed;
+}
+
+main .smartphones .title p {
+  font-weight: 500;
+  font-size: 16px;
+  color: #222222;
+  cursor: pointer;
+}
+
+main .smartphones .title p i {
+  color: #008ecc;
+  transition: all 0.1s ease;
+}
+
+main .smartphones .title p:hover i {
+  transform: translateX(5px);
+}
+
+main .smartphones .phones {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  padding: 50px 0 0;
+}
+
+main .smartphones .phones .container {
+  position: relative;
+  width: 200px;
+  border: 1px solid #ededed;
+  border-radius: 16px;
+  background: #f5f5f5;
+  transition: all 0.1s ease;
+}
+
+main .smartphones .phones .container:hover {
+  border: 1px solid #008ecc;
+}
+
+main .smartphones .phones .container .off {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50px;
+  color: #fff;
+  font-weight: 600;
+  font-size: 14px;
+  text-align: center;
+  background: #008ecc;
+  padding: 10px;
+  border-top-right-radius: 16px;
+  border-bottom-left-radius: 16px;
+}
+
+main .smartphones .phones .container .image {
+  width: 100%;
+  height: 65%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main .smartphones .phones .container .price {
+  width: 100%;
+  height: 35%;
+  background: #fff;
+  padding: 5px 10px;
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;
+}
+
+main .smartphones .phones .container .price .name {
+  padding: 5px 0;
+  border-bottom: 1px solid #ededed;
+  color: #222222;
+}
+
+main .smartphones .phones .container .price .name .product-name {
+  font-weight: 600;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+main .smartphones .phones .container .price .name .product-price {
+  display: inline-block;
+  font-weight: 700;
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+main .smartphones .phones .container .price .name .product-price2 {
+  display: inline-block;
+  font-weight: 400;
+  text-decoration: line-through;
+}
+
+main .smartphones .phones .container .price .save {
+  color: #249b3e;
+  font-weight: 600;
+  font-size: 16px;
+  padding: 10px 0;
+}
+
+/* style for categories section */
+
+main .categories {
+  width: 100%;
+  padding: 0 100px 100px;
+}
+
+main .categories .title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ededed;
+}
+
+main .categories .title p {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 16px;
+  color: #222222;
+  cursor: pointer;
+}
+
+main .categories .title p i {
+  color: #008ecc;
+  transition: all 0.1s ease;
+}
+
+main .categories .title p:hover i {
+  transform: translateX(5px);
+}
+
+main .categories .products {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 0 0;
+}
+
+main .categories .products .product {
+  transition: all 0.1s ease;
+}
+
+main .categories .products .product:hover {
+  transform: translateY(-3px);
+}
+
+main .categories .products .product .image {
+  width: 124px;
+  height: 124px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f5f5f5;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+main .categories .products .product .name {
+  font-weight: 500;
+  text-align: center;
+  font-size: 16px;
+  color: #222222;
+}
+
+/* style for electronics section */
+
+main .electronics {
+  width: 100%;
+  padding: 0 100px 100px;
+}
+
+main .electronics .title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ededed;
+}
+
+main .electronics .title p {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 16px;
+  color: #222222;
+  cursor: pointer;
+}
+
+main .electronics .title p i {
+  color: #008ecc;
+  transition: all 0.1s ease;
+}
+
+main .electronics .title p:hover i {
+  transform: translateX(5px);
+}
+
+main .electronics .brands {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 0 0;
+  margin-bottom: 30px;
+}
+
+main .electronics .brands .brand {
+  position: relative;
+  width: 32%;
+  border-radius: 16px;
+  padding: 20px;
+  transition: all 0.1s ease;
+}
+
+main .electronics .brands .brand:hover {
+  transform: translateY(-3px);
+}
+
+main .electronics .brands .brand1 {
+  background: #313131;
+}
+
+main .electronics .brands .brand2 {
+  background: #fff3cc;
+}
+
+main .electronics .brands .brand3 {
+  background: #ffecdf;
+}
+
+main .electronics .brands .brand .name {
+  display: inline-block;
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: 2px;
+  padding: 9px 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+main .electronics .brands .brand1 .name {
+  color: #fff;
+  background: #494949;
+}
+
+main .electronics .brands .brand2 .name {
+  color: #222222;
+  background: #f6de8d;
+}
+
+main .electronics .brands .brand3 .name {
+  color: #222222;
+  background: #ffd1b0;
+}
+
+main .electronics .brands .brand .logo {
+  width: 60px;
+  height: 60px;
+  display: block;
+  margin-bottom: 25px;
+}
+
+main .electronics .brands .brand1 .logo {
+  background: #fff;
+  border-radius: 16px;
+  padding: 10px;
+}
+
+main .electronics .brands .brand2 .logo {
+  width: 100px;
+  height: 35px;
+  background: #ffc915;
+  padding: 10px;
+}
+
+main .electronics .brands .brand .discount {
+  font-weight: 600;
+  font-size: 24px;
+  color: #fff;
+}
+
+main .electronics .brands .brand2 .discount {
+  color: #222222;
+}
+
+main .electronics .brands .brand3 .discount {
+  color: #222222;
+}
+
+main .electronics .brands .brand .image {
+  width: 140px;
+  height: 170px;
+  position: absolute;
+  top: 20px;
+  right: 10px;
+}
+
+main .electronics .dots {
+  display: flex;
+  justify-content: space-between;
+  width: 120px;
+  margin: auto;
+}
+
+main .electronics .dots div {
+  width: 8px;
+  height: 8px;
+  background: #d9d9d9;
+  border-radius: 50%;
+}
+
+main .electronics .dots .dot1 {
+  width: 24px;
+  border-radius: 7px;
+  background: #008ecc;
+}
+
+/* style for essentials section */
+
+main .essentials {
+  width: 100%;
+  padding: 0 100px 100px;
+}
+
+main .essentials .title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ededed;
+}
+
+main .essentials .title p {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 16px;
+  color: #222222;
+  cursor: pointer;
+}
+
+main .essentials .title p i {
+  color: #008ecc;
+  transition: all 0.1s ease;
+}
+
+main .essentials .title p:hover i {
+  transform: translateX(5px);
+}
+
+main .essentials .items {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 0 0;
+}
+
+main .essentials .items .item {
+  width: 15%;
+}
+
+main .essentials .items .item .image {
+  width: 100%;
+  height: 160px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f5f5f5;
+  border-radius: 16px;
+  margin-bottom: 20px;
+  transition: all 0.1s ease;
+}
+
+main .essentials .items .item .image:hover {
+  border: 1px solid #008ecc;
+}
+
+main .essentials .items .item .image img {
+  width: 150px;
+  height: 120px;
+}
+
+main .essentials .items .item .name {
+  color: #666666;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+}
+
+main .essentials .items .item .discount {
+  color: #222222;
+  font-weight: 700;
+  font-size: 20px;
+  text-align: center;
+}
+
+/* style for footer */
+
+footer {
+  position: relative;
+  width: 100%;
+  background: #008ecc;
+  padding: 0 100px;
+  color: #fff;
+}
+
+footer .image-side {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+footer .container {
+  display: flex;
+  gap: 70px;
+  padding: 70px 0;
+  border-bottom: 1px solid #05abf3;
+}
+
+footer .container .contact .logo {
+  margin-bottom: 30px;
+}
+
+footer .container .contact .title {
+  font-weight: 700;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+footer .container .contact .whatsapp {
+  display: flex;
+  gap: 5px;
+  margin-bottom: 15px;
+}
+
+footer .container .contact .whatsapp i {
+  font-size: 24px;
+}
+
+footer .container .contact .whatsapp .box .name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+footer .container .contact .whatsapp .box .number {
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+footer .container .contact .call {
+  display: flex;
+  gap: 5px;
+  margin-bottom: 30px;
+}
+
+footer .container .contact .call i {
+  font-size: 24px;
+}
+
+footer .container .contact .call .box .name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+footer .container .contact .call .box .number {
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+footer .container .contact .download {
+  font-weight: 700;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+footer .container .contact .images {
+  display: flex;
+  gap: 20px;
+}
+
+footer .container .contact .images img {
+  width: 140px;
+  height: 40px;
+  cursor: pointer;
+}
+
+footer .container .footer-columns {
+  display: flex;
+  gap: 70px;
+}
+
+footer .container .footer-columns .footer-column h3 {
+  display: inline-block;
+  font-weight: 600;
+  font-size: 20px;
+  border-bottom: 3px solid #fff;
+  padding-bottom: 10px;
+  margin-bottom: 30px;
+}
+
+footer .container .footer-columns .footer-column ul {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+footer .container .footer-columns .footer-column ul li {
+  list-style-position: inside;
+  font-weight: 500;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+footer .copyright {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 3.5;
+  text-align: center;
+}
